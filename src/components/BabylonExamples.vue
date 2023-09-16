@@ -1,19 +1,19 @@
 <template>
   <div>
-    <h1>Babylon Examples</h1>
+    <h1>PBR Materials</h1>
     <canvas></canvas>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { StandardMaterials } from '@/BabylonExamples/StandardMaterials';
+import { defineComponent } from "vue";
+import { PBR } from "@/BabylonExamples/PBR";
 
 export default defineComponent({
-  name: 'BabylonExamples',
+  name: "BabylonExamples",
   mounted() {
-    const canvas = document.querySelector('canvas')!;
-    new StandardMaterials(canvas);
+    const canvas = document.querySelector("canvas")!;
+    new PBR(canvas);
   },
 });
 </script>
