@@ -5,7 +5,7 @@ import {
   Vector3,
   HemisphericLight,
   MeshBuilder,
-} from "@babylonjs/core";
+} from '@babylonjs/core';
 
 export class BasicScene {
   scene: Scene;
@@ -22,11 +22,11 @@ export class BasicScene {
 
   CreateScene(): Scene {
     const scene = new Scene(this.engine);
-    const camera = new FreeCamera("camera", new Vector3(0, 1, -5), this.scene);
+    const camera = new FreeCamera('camera', new Vector3(0, 1, -5), this.scene);
     camera.attachControl();
 
     const hemiLight = new HemisphericLight(
-      "hemiLight",
+      'hemiLight',
       new Vector3(0, 1, 0),
       this.scene
     );
@@ -34,12 +34,12 @@ export class BasicScene {
     hemiLight.intensity = 0.5;
 
     const ground = MeshBuilder.CreateGround(
-      "ground",
+      'ground',
       { width: 10, height: 10 },
       this.scene
     );
 
-    const ball = MeshBuilder.CreateSphere("ball", { diameter: 1 }, this.scene);
+    const ball = MeshBuilder.CreateSphere('ball', { diameter: 1 }, this.scene);
 
     ball.position = new Vector3(0, 1, 0);
 

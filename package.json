@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --copy",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@babylonjs/core": "^4.2.0",
+    "@babylonjs/core": "^6.21.0",
     "vue": "^3.0.0"
   },
   "devDependencies": {
